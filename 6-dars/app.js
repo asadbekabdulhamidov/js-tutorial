@@ -524,3 +524,181 @@ switch (masala) {
 // Case12. Sharq kalendarida 60 yillik davr qabul qilingan. Yil muchali 5 ta rang (yashil, qizil, sariq, oq va qora) va 12 ta hayvon (sichqon, sigir, yo'lbars, quyon, ajdar, ilon, ot, qo`y, maymun, tovuq, it va to`ngizlardan) nomlaring kombinatsiyasidan kelib chiqadi. Yilning raqamiga qarab uning muchalini aniqlovchi programma tuzilsin. 1984-davr boshi: "Yashil sichqon yili".
 
 //============================
+
+// While2. 2 sonining qandaydir darajasini bildiruvchi n butun soni berilgan (n > 0). n = 2^k ni aniqlovchi programma tuzilsin.
+// Input: 128
+// Output: 7
+
+// let n = 128;
+// let k = 0;
+
+// while (n % 2 === 0) {
+//   n /= 2;
+//   k++;
+// }
+
+// console.log(k);
+
+//==================================
+
+// While1. A va B butun musbat sonlari berilgan (A> B). A usunlikdagi kesmada maksimal darajada B kesma joylashtirilgan. A kesmaning bo'sh qismini aniqlovchi programma tuzilsin. Ko'paytirish va bo'lish amallarini ishlatmang.
+
+// let a = 20;
+// let b = 15;
+
+// while (a >= b) {
+//   a = a - b;
+// }
+
+// console.log(` a kesmaning bbosh qismi ${a}`);
+
+//======================================
+
+// While2. A va B butun musbat sonlari berilgan (A > B). A usunlikdagi kesmada B kesmadan nechta joylashtirish mumkinligini aniqlovchi programma tuzilsin. Ko'paytirish va bo'lish amallarini ishlatmang.
+
+// let a = 35;
+// let b = 10;
+// let counter = 0;
+
+// while (a >= b) {
+//   a = a - b;
+//   counter++;
+// }
+
+// console.log(counter);
+
+//=================================================
+
+// While3. n butun soni berilgan (n > 0). Agar n soni 3 ning darajasi bo'lsa "3 - ning darajasi", aks xolda "3 - ning darajasi emas” degan natija chiqaruvchi programma tuzilsin. Qoldiqli bo'lish va bo'lish amallarini ishlatmang
+
+// let n = +prompt("sonni kiriting men uchning darajasimi yoqmi bilib beraman");
+
+// let daraja = 1;
+
+// while (daraja <= n) {
+//   if (daraja === n) {
+//     break;
+//   }
+//   daraja = daraja * 3;
+// }
+
+// if (daraja === n) {
+//   console.log("ha uchning darajasi");
+// } else {
+//   console.log("yoq");
+// }
+
+//============================================================
+// While4. n va m butun musbat sonlari berilgan (n > m). n sonini m soniga bo'lib butun va qoldiq qismlarini bo'lish va qoldiqni olish amallarini ishlatmasdan topuvchi programma tuzilsin.
+
+//==========================================
+
+// While5. n butun soni berilgan (n > 0). Bo'lib butun va qoldiq qismlarini aniqlash orqali, berilgan son raqamlarini teskari tartibda chiqaruvchi programma tuzilsin.
+
+// let n = 23;
+// let teskari = "";
+
+// while (n > 0) {
+//   teskari += n % 10;
+//   n = Math.floor(n / 10);
+// }
+
+// console.log(`Teskari tartibda: ${teskari}`);
+
+//=================================================
+// While6. n butun soni berilgan (n > 0). Bo'lib butun va qoldiq qismlarini aniqlash orqali, berilgan son raqamlari yig'indisini va raqamlari sonini chiqaruvchi programma tuzilsin.
+// let n = 2323;
+// let counter = 0;
+
+// while (n > 0) {
+//   counter += n % 10;
+//   n = Math.floor(n / 10);
+// }
+
+// console.log(counter, "elementlar soni: ", counter.toString().length);
+
+//===========================================
+
+// While7. n butun soni berilgan (n > 0). Bo'lib butun va qoldiq qismlarini aniqlash orqali, berilgan son raqamlarining orasida 2 raqami bor-yo'qligini aniqlovchi programma tuzilsin.
+
+// let n = 23;
+
+// let butun = 0;
+// let qoldiq = 0;
+
+// while (n > 0) {
+//   qoldiq += n % 10;
+//   butun += Math.trunc(n / 10);
+//   n = Math.trunc(n / 10);
+// }
+
+// if (qoldiq == 2 || butun == 2) {
+//   console.log("ha orasida 2 raqami bor");
+// } else {
+//   console.log("orasida ikki raqami yoq");
+// }
+
+//======================================
+
+// While8. n butun soni berilgan (n > 0). Bo'lib butun va qoldiq qismlarini aniqlash orqali, berilgan son raqamlarining orasida toq raqamlar bor-yo'qligini aniqlovchi programma tuzilsin.
+
+// let n = 23;
+
+// let butun = 0;
+// let qoldiq = 0;
+
+// while (n > 0) {
+//   qoldiq += n % 10;
+//   butun += Math.trunc(n / 10);
+//   n = Math.trunc(n / 10);
+// }
+
+// if (qoldiq % 2 == 1 || butun % 2 == 1) {
+//   console.log("ha orasida toq raqami bor");
+// } else {
+//   console.log("orasida toq raqami yoq");
+// }
+
+//============================================
+
+// While9. Palindromik songa tekshirish dasturini yozing. True yoki False qaytarsin.
+// Palindromik son – boshidan va oxiridan o’qilish bir xil bo’lgan son, masalan 1345431, 45788754
+// let n = +prompt("sonni kiriting");
+// let son = n;
+// let polindrom = "";
+
+// while (son > 0) {
+//   polindrom += son % 10;
+//   polindrom += Math.floor((son / 10) % 10);
+//   polindrom += Math.trunc(son / 10 / 10);
+//   break;
+// }
+
+// if (polindrom == n) {
+//   console.log("ha bu polindrom son");
+// } else {
+//   console.log("yoq bu polindrom emas");
+// } // UCH XONALIK SONGACHA CHIQDI
+
+//====================================
+
+
+// While10. n butun soni berilgan (n > 1). N sonini tub yoki tub emasligini aniqlovchi programma tuzilsin.
+
+// let son = +prompt("sonni kiriting");
+
+// let counter = 0;
+
+// let i = 1;
+// while (i <= son) {
+//   if (son % i == 0) {
+//     counter++;
+//   }
+//   i++;
+// }
+
+// if (counter == 2) {
+//   console.log("ha tub son");
+// } else {
+//   console.log("yoq tub son emas");
+// }

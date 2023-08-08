@@ -682,7 +682,6 @@ switch (masala) {
 
 //====================================
 
-
 // While10. n butun soni berilgan (n > 1). N sonini tub yoki tub emasligini aniqlovchi programma tuzilsin.
 
 // let son = +prompt("sonni kiriting");
@@ -702,3 +701,16 @@ switch (masala) {
 // } else {
 //   console.log("yoq tub son emas");
 // }
+
+// While5. n butun soni berilgan (n > 0). Bo'lib butun va qoldiq qismlarini aniqlash orqali, berilgan son raqamlarini teskari tartibda chiqaruvchi programma tuzilsin.
+
+// let n = 323;
+// let teskari = "";
+
+// while (n > 0) {
+//   teskari += n % 10;
+//   teskari += Math.floor(n / 10);
+//   break;
+// }
+
+// console.log(`teskarisiga ${teskari}`);

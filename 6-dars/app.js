@@ -714,3 +714,5 @@ switch (masala) {
 // }
 
 // console.log(`teskarisiga ${teskari}`);
+
+// console.log("hello switch and while");

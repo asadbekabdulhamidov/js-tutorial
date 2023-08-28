@@ -202,34 +202,6 @@
 
 //=============================================
 
-const movies = [
-  {
-    name: "Avatar 2",
-    year: 2023,
-    rate: 6,
-  },
-  {
-    name: "Baron 2",
-    year: 2022,
-    rate: 4,
-  },
-  {
-    name: "Openhimmer",
-    year: 2023,
-    rate: 9,
-  },
-  {
-    name: "Creed 3",
-    year: 2022,
-    rate: 5,
-  },
-  {
-    name: "Impossible Mission 7",
-    year: 2023,
-    rate: 7,
-  },
-];
-
 // let newMovie = [];
 
 // for (let i = 0; i < names.length; i++) {

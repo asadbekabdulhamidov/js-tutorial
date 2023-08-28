@@ -201,15 +201,3 @@
 // console.log(result);
 
 //=============================================
-
-// let newMovie = [];
-
-// for (let i = 0; i < names.length; i++) {
-//   if (names[i].rate >= 5) {
-//     newMovie.push(names
-
-//         [i]);
-//   }
-// }
-
-// console.log(newMovie);

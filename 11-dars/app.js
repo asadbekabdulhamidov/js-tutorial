@@ -97,7 +97,7 @@
 // for (let i = 2; i < n; i++) {
 //   let sum = 0;
 //   for (let j = 0; j < i; j++) {
-//     sum += arr[j2];
+//     sum += arr[j];
 //   }
 //   arr.push(sum);
 // }

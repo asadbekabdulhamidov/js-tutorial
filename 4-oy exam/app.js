@@ -69,7 +69,6 @@
 // const arr = [0, 0, 0, 0, 0, 0];
 
 // function newArr(arr) {
-//   //   let arr2 = [];
 
 //   for (let i = 0; i < arr.length; i++) {
 //     arr[i] += i;
@@ -112,17 +111,16 @@
 
 // 107.Funksiya son qabu qilsa, ushbu funksiya sonning raqamlari o’rni istalgancha almashtirib eng katta hosil bo’lishi mumkin bo’lgan sonni qaytarsin.
 
-// function kattaSon(son) {
-//   let sonString = String(son);
-//   let sonRaqam = sonString.split("");
+// function largeNum(num) {
+//   const numStr = String(num);
+//   const numArr = numStr.split("").map(Number);
 
-//   let num = "";
-//   for(let i=0; i<sonString.length;i++){
-//     num+=Math
-//   }
+//   numArr.sort((a, b) => b - a);
+//   const result = parseInt(numArr.join(""));
+//   return result;
 // }
 
-// console.log(kattaSon(567));
+// console.log(largeNum(107));
 
 //=====================================
 // 108.Funksiya 2ta sonlar oralig’ini qabul qiladi. Funksiya ushbu oraliqdan bironta random son qaytarsin.
